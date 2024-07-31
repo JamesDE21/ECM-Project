@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign In</title>
+        <link rel="stylesheet" href="../xtyle.css">
+    </head>
+
+    <body>
+        <div class="glass-container" id="login-container">
+            <div class="form-box">
+                <h6>Evacuation Center</h6>
+                <h2>Login</h2>
+                <form action="#" method="POST">
+                    <input type="email" id="userEmail" name="Email" required placeholder="Email" minlength="5" maxlength="35">
+                    <input type="password" id="userPassword" name="Password" required placeholder="Password" minlength="8" maxlength="24">
+                    <button type="submit">Login</button>
+                    <p id="OR">————— OR —————</p>
+                    <button type="button" class="google-login-button">
+                        <img src="../googlelogo.png" alt="Google Logo" class="google-logo">
+                        Continue with Google
+                    </button>
+
+                    <div class="options">
+                        <a href="#" class="hyperlink">Forgot Password?</a>
+                    </div>
+
+                    <p>Don't have an account? <a href="#" class="hyperlink" id="signup">Sign up</a></p>
+                </form>
+            </div>
+        </div>
+        <div class="glass-container" id="signup-container">
+            <div class="form-box">
+                <h6>Evacuation Center</h6>
+                <h2>Create Account</h2>
+                <form id="registerForm" name="signupForm">
+                    <input type="email" id="userSignupEmail" required placeholder="Email" pattern="^[a-zA-Z0-9._%+-]+@(gmail|hotmail|yahoo)\.com$" minlength="5" maxlength="35">
+                    <input type="password" id="userSignupPassword" required placeholder="Password" minlength="8" maxlength="24">
+                    <input type="password" id="userConfirmPassword" required placeholder="Confirm password" minlength="8" maxlength="24">
+                    <button type="submit">Sign Up</button>
+                    <p>Already have an account? <a href="#" class="hyperlink" id="login">Sign In</a></p>
+                </form>
+            </div>
+        </div>
+        <script src="../formswitch.js"></script>
+        <script src="userlogin.js"></script>
+    </body>
+</html>
