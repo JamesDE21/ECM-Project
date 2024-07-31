@@ -1,0 +1,19 @@
+{
+  "name": "ecm",
+  "version": "1.0.0",
+  "main": "formswitch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-admin": "parcel admin/adminlogin.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  },
+  "dependencies": {
+    "html5-qrcode": "^2.3.8"
+  }
+}
